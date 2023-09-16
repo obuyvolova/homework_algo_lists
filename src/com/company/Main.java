@@ -23,6 +23,11 @@ public class Main {
         stack.push(5);
         stack.printMyStack();
 
+        System.out.println();
+        stack.reverse();
+        System.out.println("Reverse my stack!");
+        stack.printMyStack();
+
         System.out.println("Remove from the stack");
         System.out.println(stack.pop());
         stack.printMyStack();
