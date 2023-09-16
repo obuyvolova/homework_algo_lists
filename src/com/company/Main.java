@@ -27,6 +27,7 @@ public class Main {
         stack.reverse();
         System.out.println("Reverse my stack!");
         stack.printMyStack();
+        System.out.println();
 
         System.out.println("Remove from the stack");
         System.out.println(stack.pop());

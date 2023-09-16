@@ -42,79 +42,18 @@ public class Stack {
 
     public void reverse() {
         Node reverseNode = new Node(head.getValue(), null);
-        System.out.println(head.getValue());
         head = head.getPrev();
         head = reverseNodeMethod(reverseNode);
-
     }
 
     private Node reverseNodeMethod(Node reverseNode) {
-
         if (head == null) {
-            System.out.println("End");
             return reverseNode;
         }
         reverseNode = new Node(head.getValue(), reverseNode);
-        System.out.println(head.getValue());
         head = head.getPrev();
-
         reverseNode = reverseNodeMethod(reverseNode);
         return reverseNode;
 
-//        reverseNode = new Node(head.getValue(), reverseNode);
-//        System.out.println(head.getValue());
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseNode);
-//        System.out.println(head.getValue());
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseNode);
-//        System.out.println(head.getValue());
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseNode);
-//        System.out.println(head.getValue());
-//        head = head.getPrev();
-//
-//        head = reverseNode;
     }
 }
-
-//
-//    Node reverseNode = new Node(head.getValue(), null);
-//        System.out.println(head.getValue());
-//        Node reverseHead = reverseNode;
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseHead);
-//        System.out.println(head.getValue());
-//        reverseHead = reverseNode;
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseHead);
-//        System.out.println(head.getValue());
-//        reverseHead = reverseNode;
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseHead);
-//        System.out.println(head.getValue());
-//        reverseHead = reverseNode;
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseHead);
-//        System.out.println(head.getValue());
-//        reverseHead = reverseNode;
-//        head = head.getPrev();
-//
-//        reverseNode = new Node(head.getValue(), reverseHead);
-//        System.out.println(head.getValue());
-//        reverseHead = reverseNode;
-//        head = head.getPrev();
-//
-//        node = reverseNode;
-//        head = reverseHead;
-//
-//    }
-//
-//    }
