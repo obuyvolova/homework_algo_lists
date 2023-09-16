@@ -1,15 +1,15 @@
 package com.company;
 
 public class Node {
-    private int value;
+    private Integer value;
     private Node prev;
 
-    public Node (int value, Node prev) {
+    public Node(Integer value, Node prev) {
         this.value = value;
         this.prev = prev;
     }
 
-    public int getValue() {
+    public Integer getValue() {
         return value;
     }
 

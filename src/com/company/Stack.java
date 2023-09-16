@@ -1,5 +1,7 @@
 package com.company;
 
+import java.sql.SQLOutput;
+
 public class Stack {
     public Node head;
     public Node node;
@@ -41,6 +43,12 @@ public class Stack {
     }
 
     public void reverse() {
+
+        if (head == null) {
+            System.out.println("Stack is empty, nothing to reverse.");
+            return;
+        }
+
         Node reverseNode = new Node(head.getValue(), null);
         head = head.getPrev();
         head = reverseNodeMethod(reverseNode);
