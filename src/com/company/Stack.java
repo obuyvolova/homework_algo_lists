@@ -1,7 +1,7 @@
 package com.company;
 
 public class Stack {
-    public static Node head;
+    public Node head;
     public Node node;
 
     public void push(int value) {
